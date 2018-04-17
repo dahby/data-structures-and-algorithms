@@ -8,4 +8,4 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 ## Solution
 
-<!-- ![](assets/shift-array.jpg) -->
+![](assets/shift-array.jpg)
