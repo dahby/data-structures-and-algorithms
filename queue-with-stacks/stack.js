@@ -38,6 +38,7 @@ module.exports = class Stack {
     return this._storage.head;
   }
 
+
   peek() {
     if (this._storage.head === null) {
       throw new Error('Cannot peek at an empty list');

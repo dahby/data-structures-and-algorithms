@@ -1,12 +1,21 @@
-## k-th value from the end of a linked list
+## queue with stacks
 
-Write a method for the LL class called 'kthFromEnd' which takes a number k as an argument. Return the node that is kth from the end.
+Implement the following methods for the Queue class:
+
+`enqueue(value)` which inserts value into the Queue using a first-in, first-out approach.
+`dequeue()` which extracts a value from the Queue using a first-in, first-out approach.
+
+You have access to 2 Stack instances with push and pop methods.
 
 ## Challenge
 
-Write a method for the LL class called 'kthFromEnd' which takes a number k as an argument. Return the node that is kth from the end.
+Implement the following methods for the Queue class:
+
+`enqueue(value)` which inserts value into the Queue using a first-in, first-out approach.
+`dequeue()` which extracts a value from the Queue using a first-in, first-out approach.
+
+You have access to 2 Stack instances with push and pop methods.
 
 ## Solution
 
-![](assets/20180424_135856.jpg)
-![](assets/20180424_140618.jpg)
+![](assets/queue.jpg)

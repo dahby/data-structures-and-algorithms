@@ -1,11 +1,11 @@
 'use strict';
 
-const Stack = require('./stack');
+// const Stack = require('./stack');
 
 module.exports = class Queue {
   constructor() {
-    this.stackA = new Stack();
-    this.stackB = new Stack();
+    this.stackA = [];
+    this.stackB = [];
   }
 
   enqueue(value) {
@@ -14,12 +14,12 @@ module.exports = class Queue {
   }
 
   dequeue() {
-    if (this.stackB.isEmpty) {
-      while (this.stackA) {
+    if (this.stackB.length === 0) {
+      while (this.stackA._storage) {
         const temp = this.stackA.pop();
         this.stackB.push(temp);
       }
     } 
     return this.stackB.pop(); 
   }
-}
+};
