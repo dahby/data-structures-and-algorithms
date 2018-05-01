@@ -21,7 +21,6 @@ describe('ll-insertions.js', () => {
   });
   test('#insertAfter', () => {
     testList.insertAfter(4, 5);
-    console.log(testList);
     expect(testList.head.next.value).toEqual(4);
     expect(testList.head.next.next.value).toEqual(5);
     expect(() => { testList.insertAfter(6, 7); }).toThrow('Expected value does not exist');
