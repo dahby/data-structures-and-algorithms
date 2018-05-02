@@ -14,11 +14,11 @@ describe('stacks with queues', () => {
     expect(queue.stackA[1]).toEqual(2);
     expect(queue.stackB[0]).toBeUndefined();
   });
-  test('#dequeue', () => {
-    // queue.dequeue();
-    expect(queue.dequeue()).toEqual(3);
+  // test('#dequeue', () => {
+  //   // queue.dequeue();
+  //   expect(queue.dequeue()).toEqual(3);
 
-    // expect(queue.stackB[0]).toEqual(3);
-    // expect(queue.stackB._storage.head.next.next).toBeNull();
-  }); 
+  //   // expect(queue.stackB[0]).toEqual(3);
+  //   // expect(queue.stackB._storage.head.next.next).toBeNull();
+  // }); 
 });
