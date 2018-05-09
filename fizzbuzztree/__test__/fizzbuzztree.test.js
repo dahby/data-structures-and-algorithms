@@ -2,7 +2,7 @@
 
 import BinaryTree from '../binary-tree';
 import Node from '../node';
-import fizzBuzz from '../fizzbuzztree';
+import fizzBuzzTree from '../fizzbuzztree';
 
 const one = new Node(1);
 const two = new Node(2);
@@ -31,12 +31,12 @@ seven.right = nine;
 
 describe('#fizzBuzzTree', () => {
   test('Should return string in in-order sequence', () => {
-    expect(fizzBuzz.fizzBuzzTree(tree.root)).toEqual('fizzfizzbuzz7fizz214fizzbuzz');
+    expect(fizzBuzzTree(tree)).toEqual('fizzfizzbuzz7fizz214fizzbuzz');
   });
   test('Should return correct typeof, "string"', () => {
-    expect(typeof fizzBuzz.fizzBuzzTree(tree.root)).toEqual('string');
+    expect(typeof fizzBuzzTree(tree)).toEqual('string');
   });
   test('Should return undefinted as there is no root node', () => {
-    expect(fizzBuzz.fizzBuzzTree(falseTree.root)).toEqual(undefined);
+    expect(fizzBuzzTree(falseTree)).toEqual(undefined);
   });
 });

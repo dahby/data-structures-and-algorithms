@@ -1,9 +1,9 @@
 'use strict';
 
-const Node = require('./node');
-const LinkedList = require('./linked-list');
+import Node from './node';
+import LinkedList from './linked-list';
 
-module.exports = class Stack {
+export default class Stack {
   constructor() {
     this._storage = new LinkedList();
   }
@@ -56,4 +56,4 @@ module.exports = class Stack {
     } 
     return false;
   }
-};
+}
