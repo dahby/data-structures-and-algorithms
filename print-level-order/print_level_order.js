@@ -15,22 +15,19 @@ export default class KAryTree {
   }
 
   _printLevelOrder(root) {
-    const queueA = new Queue();
-    const queueB = new Queue();
-    queueA.enqueue(root);
-    let output = `${this.root.value}`;
+    const queue = new Queue();
+    queue.enqueue(root);
+    let printString = `${this.root.value}`;
 
     let currentNode = null;
 
-    while (!queueA.isEmpty() && !queueB.isEmpty()) {
-      if (queueB.isEmpty()) {
-        currentNode = queueA.dequeue();
-        for (let i = 0; i < currentNode.children.length; i++) {
-          output += currentNode.children[i].value;
-          queueB.enqueue(currentNode.children[i]);
-        }
+    while (!queue.isEmpty()) {
+      currentNode = queue.dequeue();
+      for (let i = 0; i < currentNode.children.length; i++) {
+        printString += currentNode.children[i].value;
+        queue.enqueue(currentNode.children[i]);
       }
     }
-    return output;
+    return printString;
   }
 }
