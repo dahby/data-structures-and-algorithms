@@ -7,14 +7,10 @@ export default class KAryTree {
     this.root = root;
   }
 
-  findMatches() {
+  findMatches(root, targetValue) {
     if (!this.root) {
-      return undefined;
+      return null;
     }
-    return this._findMatches(this.root);
-  }
-
-  _findMatches(root, targetValue) {
     const queue = new Queue();
     const output = [];
     queue.enqueue(this.root);
@@ -24,7 +20,7 @@ export default class KAryTree {
     while (!queue.isEmpty()) {
       currentNode = queue.dequeue();
       if (currentNode.value === targetValue) {
-        output.push(currentNode);
+        output.push(currentNode.value);
       }
       for (let i = 0; i < currentNode.children.length; i++) {
         queue.enqueue(currentNode.children[i]);
